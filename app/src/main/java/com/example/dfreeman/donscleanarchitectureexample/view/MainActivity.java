@@ -1,7 +1,9 @@
-package com.example.dfreeman.donscleanarchitectureexample;
+package com.example.dfreeman.donscleanarchitectureexample.view;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import com.example.dfreeman.donscleanarchitectureexample.R;
 
 public class MainActivity extends AppCompatActivity {
 
