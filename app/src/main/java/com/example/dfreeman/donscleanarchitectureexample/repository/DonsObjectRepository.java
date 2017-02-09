@@ -1,22 +1,22 @@
 package com.example.dfreeman.donscleanarchitectureexample.repository;
 
 import com.example.dfreeman.donscleanarchitectureexample.entity.DonsObject;
-import com.example.dfreeman.donscleanarchitectureexample.entity.InfoProvider;
-
-import java.util.ArrayList;
+import com.example.dfreeman.donscleanarchitectureexample.entity.OtherEntity;
 
 public class DonsObjectRepository {
+    private DonsObject testDonsObject;
+    private OtherEntity testOtherEntity;
 
-    public ArrayList<String> getAllNames() {
-        InfoProvider infoProvider = new InfoProvider();
-        ArrayList<DonsObject> objects = infoProvider.getSampleObjects();
+    public DonsObjectRepository() {
+        testDonsObject = new DonsObject("TestOne", 1);
+        testOtherEntity = new OtherEntity();
+    }
 
-        ArrayList<String> names = new ArrayList<>();
-        for(DonsObject thisObject: objects) {
-            names.add(thisObject.getName());
-            //System.out.println(thisObject.getName());
-        }
-
-        return names;
+    //Getters
+    public DonsObject getTestDonsObject() {
+        return testDonsObject;
+    }
+    public OtherEntity getTestOtherEntity() {
+        return testOtherEntity;
     }
 }
